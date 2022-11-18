@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cabezero"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Influenza"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:background="@color/teal_700"/>
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/botonEnviar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:text="subir"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        />
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_below="@+id/cabezero"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suname"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/espacioNombre"
+        android:layout_below="@+id/nombre"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint=""
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/giveName"
+        android:layout_below="@+id/espacioNombre"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Given Name(s)"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/espacioGiven"
+        android:layout_below="@+id/giveName"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint=""
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_below="@+id/espacioGiven"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/espacioDate1"
+        android:layout_below="@+id/Date"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint="dd"
+        android:inputType="date"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/espacioDate2"
+        android:layout_below="@+id/Date"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint="mm"
+        android:inputType="date"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/espacioDate3"
+        android:layout_below="@+id/Date"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint="yyyy"
+        android:inputType="date"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_below="@+id/espacioDate3"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/espacioGender1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint="Male"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/espacioGender2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint="Female"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_below="@+id/espacioGender2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/espacioMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/material_dynamic_neutral95"
+        android:hint=""
+        android:inputType="text" />
+
+
+
+</RelativeLayout>
